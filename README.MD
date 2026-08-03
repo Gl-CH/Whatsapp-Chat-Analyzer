@@ -8,16 +8,16 @@ Built as a weekend project to practice modern Java syntax (Records, Streams API,
 
 ## 🚀 Features
 
-* **File Parser:** Reads standard WhatsApp export text files line-by-line using Regex and Java NIO.
-* **Frequency Stats:** Tracks total count of specific words/phrases per user using the Java Streams API.
-* **Initiator Tracking:** Detects who says targeted phrases *first* after conversation pauses (e.g., > 6 hours).
-* **Zero Dependencies:** Uses only standard Java 17+ libraries (`java.nio`, `java.time`, `java.util`).
+- **File Parser:** Reads standard WhatsApp export text files line-by-line using Regex and Java NIO.
+- **Frequency Stats:** Tracks total count of specific words/phrases per user using the Java Streams API.
+- **Initiator Tracking:** Detects who says targeted phrases _first_ after conversation pauses (e.g., > 6 hours).
+- **Zero Dependencies:** Uses only standard Java 17+ libraries (`java.nio`, `java.time`, `java.util`).
 
 ---
 
 ## 🛠️ Requirements
 
-* **Java Development Kit (JDK) 17** or higher.
+- **Java Development Kit (JDK) 17** or higher.
 
 ---
 
@@ -33,5 +33,29 @@ Built as a weekend project to practice modern Java syntax (Records, Streams API,
 ## 🏃 Getting Started
 
 ### 1. Compile the Project
+
 ```bash
 javac App.java
+```
+
+### 2. Run the Project
+
+```bash
+java App _chat.txt
+```
+
+### 3. Example Output
+
+==========================================
+WHATSAPP CHAT ANALYTICS  
+==========================================
+Total Messages Parsed: 14,352
+
+--- "Love You" Frequency ---
+• Sam : 412 times
+• Alex : 298 times
+
+--- First to Say "Love You" (6h+ Gap) ---
+• Sam : 84 times (Initiator Champ)
+• Alex : 31 times
+==========================================
