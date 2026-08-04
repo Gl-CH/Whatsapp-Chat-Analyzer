@@ -46,6 +46,7 @@ java App _chat.txt
 
 ### 3. Example Output
 
+``` bash
 ==========================================
 WHATSAPP CHAT ANALYTICS  
 ==========================================
@@ -58,4 +59,4 @@ Total Messages Parsed: 14,352
 --- First to Say "Love You" (6h+ Gap) ---
 • Sam : 84 times (Initiator Champ)
 • Alex : 31 times
-==========================================
+==========================================```
